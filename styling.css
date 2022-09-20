@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+/*---------------ABOUT CRYSTALS PAGE----------------------*/
+
+.about-body {
+    background-color: rgb(244, 240, 234);
+}
+
+#scrollspy-crystal-info{
+    overflow: scroll;
+    height: 30rem;
+}
+
+.about-top-section{
+    background-image: url('images/crystals-about.jpg');
+    background-position: bottom;
+    background-size:cover;
+    position:relative;
+    background-color: silver;
+    top:0;
+    padding: 8vw 2vw 8vw 2vw;
+    color:black;
+    text-align: center;
+}
+
+.about-header{
+    background-color: rgb(244, 240, 234);
+    margin:auto;
+    width: 42rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+/*---------------END ABOUT CRYSTALS PAGE----------------------*/
+
