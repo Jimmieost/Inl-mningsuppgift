@@ -1,0 +1,20 @@
+.map{
+    border: solid 1px;
+    width:425px;
+    height:350px; 
+}
+
+.contact-top-section {
+    background-image: url('images/crystals-about.jpg');
+    background-position: bottom;
+    background-size:cover;
+    position:relative;
+    background-color: silver;
+    top:0;
+    padding: 8vw 2vw 8vw 2vw;
+    float: center;
+    width: 100%;
+    max-width: 2000px;
+}
+    
+ 
