@@ -29,11 +29,24 @@
 
 .about-header{
     background-color: rgb(244, 240, 234);
+    font-size: 3vh;
     margin:auto;
-    width: 42rem;
+    width: 50vw;
     border-radius: 0.5rem;
     padding: 0.5rem;
 }
 
 /*---------------END ABOUT CRYSTALS PAGE----------------------*/
 
+/*---------------MEDIA QUERIES----------------------*/
+
+/*Same as md in Bootstrap*/
+@media only screen and (min-width: 767px) {
+        .about-header {
+        }
+  }
+
+  /*Same as lg in Bootstrap*/
+@media only screen and (min-width: 991px) {
+   
+  }
