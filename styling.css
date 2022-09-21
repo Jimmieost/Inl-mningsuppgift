@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(244, 240, 234);
+}
+
+.about-top-section{
+    background-image: url('images/crystals-about.jpg');
+    background-position: bottom;
+    background-size:cover;
+    position:relative;
+    background-color: silver;
+    top:0;
+    padding: 8vw 2vw 8vw 2vw;
+    color:black;
+    text-align: center;
+}
+
+.news-header {
+    padding: 2vw;
+    text-align: center;
+}
+
+.news-header p {
+    font-size: 3vh;
+}
+
+.form-container {
+    background-color: white;
+}
