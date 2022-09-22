@@ -1,4 +1,57 @@
 
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+/*---------------ABOUT CRYSTALS PAGE----------------------*/
+
+.about-body {
+    background-color: rgb(244, 240, 234);
+}
+
+#scrollspy-crystal-info{
+    overflow: scroll;
+    height: 30rem;
+}
+
+.about-top-section{
+    background-image: url('images/crystals-about.jpg');
+    background-position: bottom;
+    background-size:cover;
+    position:relative;
+    background-color: silver;
+    top:0;
+    padding: 8vw 2vw 8vw 2vw;
+    color:black;
+    text-align: center;
+}
+
+.about-header{
+    background-color: rgb(244, 240, 234);
+    font-size: 3vh;
+    margin:auto;
+    width: 50vw;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+/*---------------END ABOUT CRYSTALS PAGE----------------------*/
+
+/*---------------MEDIA QUERIES----------------------*/
+
+/*Same as md in Bootstrap*/
+@media only screen and (min-width: 767px) {
+        .about-header {
+        }
+  }
+
+  /*Same as lg in Bootstrap*/
+@media only screen and (min-width: 991px) {
+   
+  }
+
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=IM+Fell+English+SC&family=Sen&display=swap");
 
 body {
@@ -127,4 +180,3 @@ span:nth-child(7) {
       .navbar-collapse {
           font-size: large;    
       }
-
