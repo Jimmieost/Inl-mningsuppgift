@@ -1,9 +1,31 @@
-
 *{
     box-sizing: border-box;
     margin:0;
     padding:0;
 }
+
+/* Contact*/
+.map{
+    border: solid 1px;
+    width:425px;
+    height:350px; 
+}
+
+.contact-top-section {
+    background-image: url('images/crystals-about.jpg');
+    background-position: bottom;
+    background-size:cover;
+    position:relative;
+    background-color: silver;
+    top:0;
+    padding: 8vw 2vw 8vw 2vw;
+    float: center;
+    width: 100%;
+    max-width: 2000vw;
+}
+    
+/* End contact */ 
+
 
 /*---------------ABOUT CRYSTALS PAGE----------------------*/
 
@@ -17,6 +39,7 @@
 }
 
 .about-top-section{
+
     background-image: url('images/crystals-about.jpg');
     background-position: bottom;
     background-size:cover;
@@ -27,6 +50,7 @@
     color:black;
     text-align: center;
 }
+
 
 .about-header{
     background-color: rgb(244, 240, 234);
@@ -180,3 +204,4 @@ span:nth-child(7) {
       .navbar-collapse {
           font-size: large;    
       }
+
