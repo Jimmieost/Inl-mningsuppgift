@@ -18,6 +18,130 @@
 
 <body>
 
+    <div class="about-top-section">
+        <div class="about-header">
+            <h1>About Crystals and their energies</h1>
+            <p>Let crystals vitalize your soul.</p>
+        </div>
+    </div>
+
+    <div class="news-header">
+        <h1>Join our community today!</h1>
+        <p>Get in touch with others and see what the fortune teller says about <em>your</em> future</p>
+    </div>
+
+<!--The form-->
+<div class="form-container m-5 p-3 justify-content-center shadow-lg" action="/community_page.php" method="post">
+    <div class="row justify-content-center align-items-center">
+        <div class="row col-lg-5 md-5 text-md-start">
+            <form>
+                <div class="form-group">
+                    <label for="inputFName">First name</label>
+                    <input type="text" class="form-control" id="inputFName" name="fName" placeholder="First Name">
+                </div>
+                <div class="form-group ">
+                    <label for="inputLName">Last name</label>
+                    <input type="text" class="form-control" id="inputLName" name="lName" placeholder="Last name">
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" name="email" placeholder="E-mail">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputEnergy">Energy level</label>
+                    <input type="text" class="form-control" id="inputEnergy" name="energyLevel" placeholder="Energy level">
+                </div>
+                <div class="form-group">
+                    <label for="inputPlanet">Planet</label>
+                    <input type="text" class="form-control" id="inputPlanet" name="Planet" placeholder="Planet">
+                </div>
+                <div class="form-group">
+                    <label for="inputZodiac">Zodiac</label>
+                    <select id="inputZodiac" name="zodiacs" class="form-control">
+                        <option selected>Choose...</option>
+                        <option value="aries">Aries</option>
+                        <option value="taurus">Taurus</option>
+                        <option value="gemini">Gemini</option>
+                        <option value="cancer">Cancer</option>
+                        <option value="leo">Leo</option>
+                        <option value="virgo">Virgo</option>
+                        <option value="libra">Libra</option>
+                        <option value="scorpio">Scorpio</option>
+                        <option value="sagittarius">Sagittarius</option>
+                        <option value="capricorn">Capricorn</option>
+                        <option value="aquarius">Aquarius</option>
+                        <option value="pisces">Pisces</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword2">Enter password again</label>
+                    <input type="password" class="form-control" id="inputPassword2" name="password2" placeholder="Password">
+                </div>
+                <p class="lead mt-4">I am mostly interested in:</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1" name="check1" value="Healing">
+                    <label class="form-check-label" for="gridCheck1">
+                        Healing
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" name="check2" value="Magic">
+                    <label class="form-check-label" for="gridCheck2">
+                        Magic
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck3" name="check3" value="BlackMagic">
+                    <label class="form-check-label" for="gridCheck3">
+                        Black magic
+                    </label>
+                </div>
+                <div class="d-grid gap-2 my-4">
+                    <button type="submit" class="btn btn-primary">Create account</button>
+                </div>
+            </form>
+        </div>
+        <div class="row col-md-5 text-end d-none d-md-block">
+            <img class="img-fluid"
+                src="https://images.pexels.com/photos/4040638/pexels-photo-4040638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="A lot of them">
+        </div>
+    </div>
+
+<!--OBS TEST NEDAN-->
+
+<aside class="news-aside col-4">
+    <h2>Newsletter</h2>
+    <p>Don't miss out! Sig up for our newsletter.</p>
+    <form class="newsletter-form" action="/newsletter_page.php" method="get">
+        <label for="newsEmail" placeholder="E-mail">Email</label>
+        <input type="email" class="form-control" id="newsEmail" name="newsEmail" placeholder="E-mail">
+        <input type="submit" value="Submit">
+    </form>
+</aside>
+
+
+</div>
+
+<article class="news-quote">
+    <p><q>
+            <span>I</span>
+            <span>now</span>
+            <span>have</span>
+            <span>more</span>
+            <span>crystals</span>
+            <span>than</span>
+            <span>friends.</span>
+        </q></p>
+</article>
+
+
+
 
 
 
