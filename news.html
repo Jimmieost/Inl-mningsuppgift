@@ -28,10 +28,6 @@
 <!--This class above everything in body tag, including header etc-->
 
     <div class="about-top-section">
-        <div class="about-header">
-            <h1>About Crystals and their energies</h1>
-            <p>Let crystals vitalize your soul.</p>
-        </div>
     </div>
 
     <div class="news-header">
@@ -40,10 +36,10 @@
     </div>
 
 <!--The form-->
-<div class="form-container m-5 p-3 justify-content-center shadow-lg" action="/community_page.php" method="post">
-    <div class="row justify-content-center align-items-center">
+<div class="d-flex justify-content-center">
+    <div class=" form-container m-5 p-3 shadow-lg row col-8 justify-content-center align-items-center">
         <div class="row col-lg-5 md-5 text-md-start">
-            <form>
+            <form action="/community_page.php" method="post">
                 <div class="form-group">
                     <label for="inputFName">First name</label>
                     <input type="text" class="form-control" id="inputFName" name="fName" placeholder="First Name">
@@ -115,26 +111,12 @@
                 </div>
             </form>
         </div>
-        <div class="row col-md-5 text-end d-none d-md-block">
+        <div class="row col-md-7 text-end d-none d-md-block">
             <img class="img-fluid"
-                src="https://images.pexels.com/photos/4040638/pexels-photo-4040638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="A lot of them">
+                src="/Images/many-crystals.jpg"
+                alt="A big pink crystal surrounded by smaller crystals.">
         </div>
     </div>
-
-<!--OBS TEST NEDAN-->
-
-<aside class="news-aside col-4">
-    <h2>Newsletter</h2>
-    <p>Don't miss out! Sig up for our newsletter.</p>
-    <form class="newsletter-form" action="/newsletter_page.php" method="get">
-        <label for="newsEmail" placeholder="E-mail">Email</label>
-        <input type="email" class="form-control" id="newsEmail" name="newsEmail" placeholder="E-mail">
-        <input type="submit" value="Submit">
-    </form>
-</aside>
-
-
 </div>
 
 <article class="news-quote">

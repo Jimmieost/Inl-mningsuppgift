@@ -1,3 +1,7 @@
+body{
+    background-color:rgb(255, 223, 221);
+}
+
 /*Prducuct pages*/
 @font-face {
     font-family: MyFirstFont;
@@ -94,9 +98,6 @@
 
 /*---------------ABOUT CRYSTALS PAGE----------------------*/
 
-.about-body {
-    background-color: rgb(244, 240, 234);
-}
 
 #scrollspy-crystal-info{
     overflow: scroll;
@@ -118,12 +119,11 @@
 
 
 .about-header{
-    background-color: rgb(244, 240, 234);
+    text-align: center;
     font-size: 3vh;
     margin:auto;
-    width: 50vw;
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 1.5rem 0.5rem 0rem 0.5rem ;
 }
 
 /*---------------END ABOUT CRYSTALS PAGE----------------------*/
@@ -141,13 +141,12 @@
    
   }
 
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=IM+Fell+English+SC&family=Sen&display=swap");
-
-body {
-    background-color: rgb(244, 240, 234);
-}
 
 /*------------NEWS CSS--------------*/
+@font-face {
+    font-family: dancingFont;
+    src: url(/font-family/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
 
 .about-top-section {
     background-image: url('images/crystals-about.jpg');
@@ -181,7 +180,7 @@ body {
 
 .news-quote {
     font-size: 7vh;
-    font-family: 'Dancing Script', cursive;
+    font-family: dancingFont;
     text-align: center;
     width: 75%;
     margin: auto;
