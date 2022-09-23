@@ -1,5 +1,17 @@
 body{
-    background-color:rgb(255, 223, 221);
+    /*background-color:rgb(255, 223, 221);*/
+    background-color: rgb(244, 239, 255)
+}
+
+.top-section {
+    background-image: url('images/crystals-about.jpg');
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    background-color: silver;
+    top: 0;
+    height:50vh;
+    text-align: center;
 }
 
 /*Prducuct pages*/
@@ -146,18 +158,6 @@ body{
 @font-face {
     font-family: dancingFont;
     src: url(/font-family/Dancing_Script/DancingScript-VariableFont_wght.ttf);
-}
-
-.about-top-section {
-    background-image: url('images/crystals-about.jpg');
-    background-position: bottom;
-    background-size: cover;
-    position: relative;
-    background-color: silver;
-    top: 0;
-    padding: 8vw 2vw 8vw 2vw;
-    color: black;
-    text-align: center;
 }
 
 .news-header {
