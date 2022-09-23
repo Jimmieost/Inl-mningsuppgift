@@ -268,3 +268,9 @@ span:nth-child(7) {
       .navbar-collapse {
           font-size: large;    
       }
+      .nav-link:hover {
+        border-bottom: 3px solid black;      
+    }
+    .nav-link.active {
+        border-bottom: 3px solid black;
+    }
