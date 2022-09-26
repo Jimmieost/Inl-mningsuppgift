@@ -145,6 +145,8 @@ body{
 .about-article p{
     font-size: var(--p-font);
     padding: 3vh;
+    width: 85%;
+    margin:auto;
 }
 
 /*---------------END ABOUT CRYSTALS PAGE----------------------*/
@@ -178,6 +180,7 @@ body{
 .news-quotes {
     display: flex;
     flex-direction: column;
+    gap:20px;
     font-size:var(--p-font);
     font-family: dancingFont;
     width: 75%;
@@ -186,7 +189,8 @@ body{
 
 .news-quotes div{
     border:solid;
-    padding: 1.5rem;;
+    padding: 1.5rem;
+
 }
 
 .news-h2{
@@ -201,6 +205,13 @@ body{
 
 /*Same as md in Bootstrap*/
 @media only screen and (min-width: 767px) {
+    .about-article:{
+        width: 70%;
+    }
+}
+
+/*Same as lg in Bootstrap*/
+@media only screen and (min-width: 991px) {
     .news-quotes{
         font-size: 1.6rem;
         flex-direction: row;
@@ -222,11 +233,6 @@ body{
         font-weight: bolder;
         border-width: 3px;
     }
-}
-
-/*Same as lg in Bootstrap*/
-@media only screen and (min-width: 991px) {
-
 }
 
 .carousel-item img{
