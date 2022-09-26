@@ -184,7 +184,7 @@ body{
     margin: auto;
 }
 
-.news-quotes p{
+.news-quotes div{
     border:solid;
     padding: 1.5rem;;
 }
@@ -209,8 +209,18 @@ body{
         align-items: center;
     }
 
-    .news-quotes section{
+    .news-quotes div{
         flex-basis: 20%;
+    }
+
+    .news-quotes div{
+        transition: flex-basis 2s, font-weight 1s, font-size 2s, border-width 2s;
+    }
+    .news-quotes div:hover{
+        flex-basis:24%;
+        font-size: 2rem;
+        font-weight: bolder;
+        border-width: 3px;
     }
 }
 
