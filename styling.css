@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
 /*Prducuct pages*/
 @font-face {
     font-family: MyFirstFont;
@@ -63,11 +68,7 @@
   }
   }
 /*Prducuct pages*/
-*{
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
-}
+
 
 /* Contact*/
 .map{
@@ -88,9 +89,56 @@
     width: 100%;
     max-width: 2000vw;
 }
+
+.contact-info {
+    font-size: 1.2rem;
+}
+
+.contact-header {
+    font-size: 2.4rem;
+}   
+
+.contact-aside {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+.email-contact-page {
+    display: flex;
+    justify-content: center;
+    margin: 1wv 2wv 1wv 2vw;
+}
+
+input[type=text] {
+    transition: width 0.3s ease-in-out;
+    margin: 1wv 2wv 1wv 2vw;
     
+}
+input[type=text]:focus {
+    width: 15%;
+  }
+
+input[type=checkbox] {
+    margin: 1wv 2wv 1wv 2vw;
+  }
+.contact-submit {
+    background-color: plum;
+}
 /* End contact */ 
 
+/* Back to top button */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 1vw;
+    right: 0.5vw;
+    display: none;
+    z-index: 99;
+    border-radius: 3rem;
+    height: 3rem;
+    width: 2rem;
+    background-color: rgb(205, 140, 205);
+    padding: 0.25rem 0.15rem;
+  }
 
 /*---------------ABOUT CRYSTALS PAGE----------------------*/
 
@@ -145,6 +193,7 @@
 
 body {
     background-color: rgb(244, 240, 234);
+    font-family:'Philosopher', sans-serif;
 }
 
 /*------------NEWS CSS--------------*/
