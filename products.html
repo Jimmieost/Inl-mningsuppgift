@@ -29,13 +29,54 @@
   </div>
 </div>
 <!--This class above everything in body tag, including header etc-->
+  
+    <!--navbar-->
+<nav class="navbar navbar-expand-md navbar-light">
+  <div class="container-xxl">
+      <a href="#intro" class="navbar-brand">
+          <span class="fw-bold">
+            <img src="images/logo2.jpg" alt="Healing Crystals logo" style="width:50px; height:50px;">
+          </span>
+      </a>
+      <!--toggle button for mobile nav-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+          aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
 
-<!--Back to top-->
+  <!--navbar links-->
+      <div class="collapse navbar-collapse justify-content-start align-center" id="main-nav">
+          <ul class="navbar-nav">
+              <li class="nav-item fw-bold">
+                  <a href="index.html" class="nav-link text-dark">Home</a>
+              </li>
+              <li class="nav-item fw-bold">
+                  <a href="products.html" class="nav-link text-dark ">Products</a>
+              </li>
+              <li class="nav-item fw-bold">
+                  <a href="about.html" class="nav-link text-dark ">About crystals</a>
+              </li>
+              <li class="nav-item fw-bold">
+                  <a href="news.html" class="nav-link text-dark ">Community</a>
+              </li>
+              <!--displays on small screens, see button below for medium screens and up-->
+              <li class="nav-item fw-bold">
+                  <a href="contact.html" class="nav-link text-dark">Contact</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+   <button class="btn btn-inline-dark text-dark fw-bold btn-lg me-md-2" type="button">Login</button>
+   <button class="btn btn-inline-dark text-dark fw-bold btn-lg" type="button">Register</button>
+</div>
+</nav>
+ 
+  <!--Back to top-->
   <button title="back-to-top" type="button" class="btn btn-info btn-floating btn-lg" id="btn-back-to-top" >
     <i class="fas fa-arrow-up">  &#8593 </i>
   </button>
 
-    <h1 id="producth1" class="text-center">Products</h1>
 
     <section style="background-color: #eee;">
       <div class="input-group mb-3">
@@ -418,6 +459,23 @@
     </li>
   </ul>
 </nav>
+
+<!-- Footer -->
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <p class="col-md-4 mb-0 text-muted">© 2022 Healing Crystals, Inc</p>
+
+  <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+  </a>
+
+  <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="products.html" class="nav-link px-2 text-muted">Products</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About us</a></li>
+      <li class="nav-item"><a href="news.html" class="nav-link px-2 text-muted">News</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+  </ul>
+</footer>
 
 
     <!-- JavaScript Bundle with Popper -->

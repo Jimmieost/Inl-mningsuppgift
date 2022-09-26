@@ -3,6 +3,28 @@
     margin:0;
     padding:0;
 }
+
+:root{
+    --p-font: 1.2rem;
+}
+
+body{
+    /*background-color:rgb(255, 223, 221);*/
+    background-color: rgb(244, 239, 255)
+    font-family:'Philosopher', sans-serif;
+}
+
+.top-section {
+    background-image: url('images/crystals-about.jpg');
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    background-color: silver;
+    top: 0;
+    height:50vh;
+    text-align: center;
+}
+
 /*Prducuct pages*/
 @font-face {
     font-family: MyFirstFont;
@@ -111,9 +133,9 @@
 
 input[type=text] {
     transition: width 0.3s ease-in-out;
-    margin: 1wv 2wv 1wv 2vw;
-    
+    margin: 1wv 2wv 1wv 2vw;    
 }
+
 input[type=text]:focus {
     width: 15%;
   }
@@ -142,9 +164,6 @@ input[type=checkbox] {
 
 /*---------------ABOUT CRYSTALS PAGE----------------------*/
 
-.about-body {
-    background-color: rgb(244, 240, 234);
-}
 
 #scrollspy-crystal-info{
     overflow: scroll;
@@ -164,127 +183,102 @@ input[type=checkbox] {
     text-align: center;
 }
 
+.about-article{
+    text-align: center;
+}
 
 .about-header{
-    background-color: rgb(244, 240, 234);
-    font-size: 3vh;
-    margin:auto;
-    width: 50vw;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
+    font-size: 5vh;
+    padding: 1.5rem 0.5rem 0rem 0.5rem ;
+}
+
+.about-article p{
+    font-size: var(--p-font);
+    padding: 3vh;
 }
 
 /*---------------END ABOUT CRYSTALS PAGE----------------------*/
 
-/*---------------MEDIA QUERIES----------------------*/
-
-/*Same as md in Bootstrap*/
-@media only screen and (min-width: 767px) {
-        .about-header {
-        }
-  }
-
-  /*Same as lg in Bootstrap*/
-@media only screen and (min-width: 991px) {
-   
-  }
-
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=IM+Fell+English+SC&family=Sen&display=swap");
-
-body {
-    background-color: rgb(244, 240, 234);
-    font-family:'Philosopher', sans-serif;
-}
 
 /*------------NEWS CSS--------------*/
 
-.about-top-section {
-    background-image: url('images/crystals-about.jpg');
-    background-position: bottom;
-    background-size: cover;
-    position: relative;
-    background-color: silver;
-    top: 0;
-    padding: 8vw 2vw 8vw 2vw;
-    color: black;
+
+@font-face {
+    font-family: dancingFont;
+    src: url(/font-family/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+
+.news-article{
     text-align: center;
 }
 
 .news-header {
-    padding: 2vw;
-    text-align: center;
+    font-size: 5vh;
+    padding: 1.5rem 0.5rem 0rem 0.5rem ;
 }
 
-.news-header p {
-    font-size: 3vh;
+.news-article p{
+    font-size: var(--p-font);
+    padding: 3vh;
 }
 
 .form-container {
     background-color: white;
 }
 
-.news-aside {
+.news-quotes {
     display: flex;
-    border: solid;
-}
-
-.news-quote {
-    font-size: 7vh;
-    font-family: 'Dancing Script', cursive;
-    text-align: center;
+    flex-direction: column;
+    font-size:var(--p-font);
+    font-family: dancingFont;
     width: 75%;
     margin: auto;
-
-    /*For animation*/
-    transform: scale(0.94);
-    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
 
-/*For animation*/
-
-span {
-    display: inline-block;
-    opacity: 0;
-    filter: blur(4px);
+.news-quotes div{
+    border:solid;
+    padding: 1.5rem;;
 }
 
-span:nth-child(1) {
-    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(2) {
-    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(3) {
-    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(4) {
-    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(5) {
-    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(6) {
-    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(7) {
-    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-@keyframes fade-in {
-    100% {
-        opacity: 1;
-        filter: blur(0);
-    }
+.news-h2{
+    text-align: center;
+    padding: 2rem;
 }
 
 
 /*------------END NEWS CSS--------------*/
+
+/*---------------MEDIA QUERIES----------------------*/
+
+/*Same as md in Bootstrap*/
+@media only screen and (min-width: 767px) {
+    .news-quotes{
+        font-size: 1.6rem;
+        flex-direction: row;
+        width:100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .news-quotes div{
+        flex-basis: 20%;
+    }
+
+    .news-quotes div{
+        transition: flex-basis 2s, font-weight 1s, font-size 2s, border-width 2s;
+    }
+    .news-quotes div:hover{
+        flex-basis:24%;
+        font-size: 2rem;
+        font-weight: bolder;
+        border-width: 3px;
+    }
+}
+
+/*Same as lg in Bootstrap*/
+@media only screen and (min-width: 991px) {
+
+}
 
 .carousel-item img{
     width: auto;
@@ -318,3 +312,9 @@ span:nth-child(7) {
       .navbar-collapse {
           font-size: large;    
       }
+      .nav-link:hover {
+        border-bottom: 3px solid black;      
+    }
+    .nav-link.active {
+        border-bottom: 3px solid black;
+    }

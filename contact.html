@@ -34,30 +34,73 @@
         <em class="fas fa-arrow-up">  &#8593 </em>
     </button>
 
-    <div class="contact-top-section"> </div>
-    <main>
-        <div class="container" class="m-5">
-            <div class="row">
-            <div class="col-lg mt-2 justify-content-center">
-                <iframe title="map" class="map" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=11.889567375183107%2C57.641105683031036%2C11.903901100158693%2C57.647008284854856&amp;layer=mapnik">
-                </iframe>
-                <small> <a href="https://www.openstreetmap.org/#map=16/57.6441/11.8967">Show map</a>
-                </small> 
-            </div>
+<!--navbar-->
+<nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-xxl">
+        <a href="#intro" class="navbar-brand">
+            <span class="fw-bold">
+              <img src="images/logo2.jpg" alt="Healing Crystals logo" style="width:50px; height:50px;">
+            </span>
+        </a>
+        <!--toggle button for mobile nav-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+            aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="col-lg mt-2">  
-             <h1 class="contact-header  text-center justify-content-center"> Contact us!</h1>
-                <div class=" contact-info text-center m-3 text-wrap"> 
-                    <address>
-                        Feel free to contact us if you have any questions! 
-                        <ul class="list-unstyled text-center">
-                            <li>Email: Healingcrystals@energies.com </li>
-                            <li>Phone: +46333666999</li>
-                            <li>Adress: Amestistgatan 3 Gothenburg</li>
-                        </ul>
-                        You can always come by our space to see the crystals!
-                    </address>
-                 </div>
+    <!--navbar links-->
+        <div class="collapse navbar-collapse justify-content-start align-center" id="main-nav">
+            <ul class="navbar-nav">
+                <li class="nav-item fw-bold">
+                    <a href="index.html" class="nav-link text-dark">Home</a>
+                </li>
+                <li class="nav-item fw-bold">
+                    <a href="products.html" class="nav-link text-dark ">Products</a>
+                </li>
+                <li class="nav-item fw-bold">
+                    <a href="about.html" class="nav-link text-dark ">About crystals</a>
+                </li>
+                <li class="nav-item fw-bold">
+                    <a href="news.html" class="nav-link text-dark ">Community</a>
+                </li>
+                <!--displays on small screens, see button below for medium screens and up-->
+                <li class="nav-item fw-bold">
+                    <a href="contact.html" class="nav-link text-dark">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+     <button class="btn btn-inline-dark text-dark fw-bold btn-lg me-md-2" type="button">Login</button>
+     <button class="btn btn-inline-dark text-dark fw-bold btn-lg" type="button">Register</button>
+  </div>
+</nav>
+
+<!--Header-picture in this div-->
+<div class="top-section">
+</div>
+   
+   
+    <div class="container" class="m-5">
+        <div class="row">
+          <div class="col-lg mt-2 justify-content-center">
+            <iframe title="map" class="map" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=11.889567375183107%2C57.641105683031036%2C11.903901100158693%2C57.647008284854856&amp;layer=mapnik">
+            </iframe><small><a href="https://www.openstreetmap.org/#map=16/57.6441/11.8967">Show map</a></small> 
+          </div>
+
+          <div class="col-lg mt-2">  
+            <h1 class="display-6 text-center justify-content-center"> Contact us!</h1>
+            <div class="text-center lead -3 m-3 text-wrap"> 
+                <p>
+                Feel free to contact us if you have any questions! 
+                <ul class="list-unstyled text-center">
+                    <li>Email: Healingcrystals@energies.com </li>
+                    <li>Phone: +46333666999</li>
+                    <li>Adress: Amestistgatan 3 Gothenburg</li>
+                    </ul>
+                You can always come by our space to see the crystals!
+            </p>
+
                 </div>
                 <div class="col-lg mt-2 justify-content-center">
                     <blockquote class=" blockquote p-4">
@@ -123,6 +166,23 @@
     </div>
     </main>
 
+
+    <!-- Footer -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">© 2022 Healing Crystals, Inc</p>
+
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="products.html" class="nav-link px-2 text-muted">Products</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About us</a></li>
+            <li class="nav-item"><a href="news.html" class="nav-link px-2 text-muted">News</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+        </ul>
+    </footer>
 
     <!-- JavaScript Bundle with Popper -->
     <script>
