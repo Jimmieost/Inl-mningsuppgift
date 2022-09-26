@@ -12,7 +12,10 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styling.css">     
+    <link rel="stylesheet" type="text/css" href="styling.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">  
     <title>Healing Crystals</title>
 </head>
 
@@ -26,7 +29,10 @@
 </div>
 <!--This class above everything in body tag, including header etc-->
 
-
+<!--Back to top-->
+    <button title="back-to-top" type="button"  id="btn-back-to-top" >
+        <em class="fas fa-arrow-up">  &#8593 </em>
+    </button>
 
 <!--navbar-->
 <nav class="navbar navbar-expand-md navbar-light">
@@ -94,21 +100,52 @@
                     </ul>
                 You can always come by our space to see the crystals!
             </p>
+
                 </div>
-          </div>
-          <div class="col-lg mt-2 justify-content-center">
-            <blockquote class="blockquote p-4">
-                <p class="mb-2">“I believe in kindness and karma—which could make me a Buddhist.
-                     I believe in mystic healing and crystals’ powers—which could make me a witch. 
-                     I believe in truth, honor, and forgiveness—which could make me a Christian. 
-                     I even believe in the existence of past lives and that each and every one of us is watched over by guides 
-                    from the other side—which, to some, would make me totally woo-woo squared.”</p>
-                <footer class="blockquote-footer">Emma Mildon <cite title="Source Title">The Soul Searcher's Handbook: 
-                    A Modern Girl's Guide to the New Age World</cite></footer>
-              </blockquote>
-          </div>
+                <div class="col-lg mt-2 justify-content-center">
+                    <blockquote class=" blockquote p-4">
+                        “I believe in kindness and karma—which could make me a Buddhist.
+                        I believe in mystic healing and crystals’ powers—which could make me a witch. 
+                        I believe in truth, honor, and forgiveness—which could make me a Christian. 
+                        I even believe in the existence of past lives and that each and every one of us is watched over by guides 
+                        from the other side—which, to some, would make me totally woo-woo squared.”
+                        <footer class="blockquote-footer mt-2">Emma Mildon 
+                            <cite title="Source Title">The Soul Searcher's Handbook: 
+                                A Modern Girl's Guide to the New Age World
+                            </cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
         </div>
-      </div>
+       <div class="container-form"> 
+            <form class="email-contact-page" action="mailto:healingcrystals@energies.com"> 
+                <div class="row">
+                    <div class="col-25"> 
+                        <label for="email"> Email: </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email"> 
+                    </div>
+                    <div class="col-25">
+                        <label for="online-events"> I'm interested in online Events</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="checkbox" id="online-events" name="online-events" value="online-events">  
+                    </div>
+                    <div class="col-25">
+                        <label for="local-events"> I'm interested in local Events</label> 
+                    </div>
+                    <div class="col-75">
+                        <input type="checkbox" id="local-events" name="local-events" value="local-events">
+                    </div>
+                    <div class="col-25"> 
+                        <input class="contact-submit" type="submit" value="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+
       <div id="myModal" class="modal fade" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -127,6 +164,8 @@
             </div>
         </div>
     </div>
+    </main>
+
 
     <!-- Footer -->
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
