@@ -424,3 +424,11 @@ input[type=checkbox] {
     .nav-link.active {
         border-bottom: 3px solid black;
     }
+    div.index-h5 {
+        text-align: center;
+    }
+    fieldset {
+        text-align: center;
+    }
+ 
+   
