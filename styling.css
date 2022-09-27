@@ -387,7 +387,7 @@ input[type=checkbox] {
 }
 
 .carousel-item img{
-    width: auto;
+    width: 600px;
     height: 500px;
     max-height: 500px;
     margin: auto; 
@@ -399,26 +399,33 @@ input[type=checkbox] {
     body, html {
         height: 100%;
         margin: 0;
-      }
-      .hero-image {
+    }
+    .hero-image {
         background-image: url("images/pexels-noelle-otto-906056.jpg");
         height: 75%; 
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-      }
-      .hero-text {
+    }
+    .hero-text {
         text-align: left;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-      }
-      .navbar-collapse {
+    }
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+    h1.font-size {
+        font-size: 75px;
+    }
+    .navbar-collapse {
           font-size: large;    
-      }
-      .nav-link:hover {
+    }
+    .nav-link:hover {
         border-bottom: 3px solid black;      
     }
     .nav-link.active {
