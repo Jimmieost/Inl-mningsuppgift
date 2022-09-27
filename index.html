@@ -11,7 +11,10 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styling.css">   
+    <link rel="stylesheet" type="text/css" href="styling.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">   
 
     <!-- Bootstrap Cookie Alert -->
     <!-- Read more at https://github.com/Wruczek/Bootstrap-Cookie-Alert -->
@@ -20,10 +23,30 @@
 </head>
 
 <body>
-    <div class="adbn-wrap">
-        <p>We have detected an adblocker in your browser, <br/>Adblock blocks our abillity to communicate with the crystals.</p><br/><p>PLEASE DISABLE IT</p>
-            <button id="adbnrb" type="button" name="button">I've disabled AdBlocker</button>
-    </div>
+
+<!--This class above everything in body tag, including header etc-->
+<div class="adbn-wrap">
+  <div>
+  <p>We have detected an adblocker in your browser, <br/>Adblock blocks our abillity to communicate with the crystals.</p><br/><p>PLEASE DISABLE IT</p>
+  <button id="adbnrb" type="button" name="button">I've disabled AdBlocker</button>
+  </div>
+</div>
+<div id="myModalcart" class="modalcart">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 class="text-center" id="producth1">Purchases</h2>
+    <p>Your cart is empty</p>
+  </div>
+
+</div>
+<!--This class above everything in body tag, including header etc-->
+ 
+<!--Back to top-->
+<button title="back-to-top" type="button" class="btn btn-info btn-floating btn-lg" id="btn-back-to-top" >
+  <i class="fas fa-arrow-up">  &#8593 </i>
+</button> 
 
     <div class="hero-image">
         <!--navbar-->
@@ -40,34 +63,43 @@
                  <span class="navbar-toggler-icon"></span>
              </button>
      
-    <div class="collapse navbar-collapse justify-content-start " id="main-nav">
-        <ul class="navbar-nav">
-            <li class="nav-item fw-bold">
-                <a href="index.html" class="nav-link active text-dark">Home</a>
-            </li>
-            <li class="nav-item fw-bold">
-                <a href="products.html" class="nav-link text-dark">Products</a>
-            </li>
-            <li class="nav-item fw-bold">
-                <a href="about.html" class="nav-link text-dark">About Crystals</a>
-            </li>
-            <li class="nav-item fw-bold">
-                <a href="news.html" class="nav-link text-dark">Community</a>
-            </li>
-            <li class="nav-item fw-bold">
-                <a href="contact.html" class="nav-link text-dark">Contact</a>
-            </li>
-        </ul>
-    </div>
-    </div>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <a href="" class="btn btn-outline-dark fw-bold btn-md me-md-2" type="button">Login</a>
-            <a href="news.html" class="btn btn-outline-dark fw-bold btn-md" type="button">Register</a>
-        </div>
-    </nav> 
-        <div class="hero-text">
-            <h1 style="font-size:75px">Healing Crystals</h1>
-        </div>
+
+         <!--navbar links-->
+             <div class="collapse navbar-collapse justify-content-start " id="main-nav">
+                 <ul class="navbar-nav">
+                  <li class="nav-item fw-bold">
+                    <a href="index.html" class="nav-link active text-dark">Home</a>
+                  </li>
+                     <li class="nav-item fw-bold">
+                         <a href="products.html" class="nav-link text-dark">Products</a>
+                     </li>
+                     <li class="nav-item fw-bold">
+                         <a href="about.html" class="nav-link text-dark">About Us</a>
+                     </li>
+                     <li class="nav-item fw-bold">
+                         <a href="news.html" class="nav-link text-dark">News</a>
+                     </li>
+                     <!--displays on small screens, see button below for medium screens and up-->
+                     <li class="nav-item fw-bold">
+                         <a href="contact.html" class="nav-link text-dark">Contact</a>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <div class="wigglecart">  
+            <a id="myOnclick">
+              <svg id="Layer_1" width="50px" height="50px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 111.85"><title>cart</title><path d="M4.06,8.22A4.15,4.15,0,0,1,0,4.06,4.13,4.13,0,0,1,4.06,0h6A19.12,19.12,0,0,1,20,2.6c5.44,3.45,6.41,8.38,7.8,13.94h91a4.07,4.07,0,0,1,4.06,4.06,5,5,0,0,1-.21,1.25L112.06,64.61a4,4,0,0,1-4,3.13H41.51c1.46,5.41,2.92,8.32,4.89,9.67C48.8,79,53,79.08,59.93,79h47.13a4.06,4.06,0,0,1,0,8.12H60c-8.63.1-13.94-.11-18.2-2.91s-6.66-7.91-8.95-17h0L18.94,14.46c0-.1,0-.1-.11-.21a7.26,7.26,0,0,0-3.12-4.68A10.65,10.65,0,0,0,10,8.22H4.06Zm80.32,25a2.89,2.89,0,0,1,5.66,0V48.93a2.89,2.89,0,0,1-5.66,0V33.24Zm-16.95,0a2.89,2.89,0,0,1,5.67,0V48.93a2.89,2.89,0,0,1-5.67,0V33.24Zm-16.94,0a2.89,2.89,0,0,1,5.66,0V48.93a2.89,2.89,0,0,1-5.66,0V33.24Zm41.72-8.58H30.07l9.26,34.86H105l8.64-34.86Zm2.68,67.21a10,10,0,1,1-10,10,10,10,0,0,1,10-10Zm-43.8,0a10,10,0,1,1-10,10,10,10,0,0,1,10-10Z"/></svg>
+            </a>
+          </div>
+          <a href=""><button class="btn btn-outline-dark fw-bold btn-md me-md-2" type="button"> Login</button></a>
+          <a href="news.html"><button class="btn btn-outline-dark fw-bold btn-md" type="button"> Register</button></a>
+       </div>
+     </nav> 
+         <div class="hero-text">
+             <h1 style="font-size:75px">Healing Crystals</h1>
+         </div>
+
     </div>
     <br> 
     <br> 
