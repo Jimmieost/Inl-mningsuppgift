@@ -10,7 +10,7 @@
 
 body{
     /*background-color:rgb(255, 223, 221);*/
-    background-color: rgb(244, 239, 255)
+    background-color: rgb(244, 239, 255);
     font-family:'Philosopher', sans-serif;
 }
 
@@ -421,7 +421,7 @@ input[type=checkbox] {
     }
     .hero-image {
         background-image: url("images/pexels-noelle-otto-906056.jpg");
-        height: 75%; 
+        height: 100%; 
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
