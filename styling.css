@@ -520,6 +520,11 @@ body{
     div.index-h3 {
         text-align: center;
     }
+    div.form {
+        border:solid 3px;
+        width: 75%;
+        margin:auto
+    }
 
     /*----------UNDER CONSTRUCTION CSS------------*/
 
