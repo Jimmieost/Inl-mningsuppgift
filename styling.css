@@ -421,7 +421,7 @@ input[type=checkbox] {
     }
     .hero-image {
         background-image: url("images/pexels-noelle-otto-906056.jpg");
-        height: 75%; 
+        height: 100%; 
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -454,6 +454,10 @@ input[type=checkbox] {
         text-align: center;
     }
     fieldset {
+        text-align: center;
+       
+    }
+    div.index-h3 {
         text-align: center;
     }
 
@@ -521,4 +525,5 @@ input[type=checkbox] {
             margin-bottom:150px;
         }
         }
+
    
