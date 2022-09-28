@@ -9,9 +9,8 @@
 }
 
 body{
-    /*background-color:rgb(255, 223, 221);*/
     background-color: rgb(244, 239, 255);
-    font-family: 'Philosopher', sans-serif;
+    font-family:'Philosopher', sans-serif;
 }
 
 .top-section {
@@ -88,6 +87,105 @@ body{
 .adbn-wrap div{
   width: 70vw;
   }
+  }
+
+.searchproduct 
+  {
+      border: 2px solid #000000;
+      overflow: auto;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+  }
+  
+.searchproduct  input[type="text"]
+  {
+      border: 0px;
+      width: 67%;
+      padding: 10px 10px;
+  }
+  
+.searchproduct  input[type="text"]:focus
+  {
+      outline: 0;
+  }
+  
+.searchproduct input[type="submit"]
+  {
+      border: 0px;
+      background: none;
+      background-color: #CF5C3F;
+      color: #fff;
+      float: right;
+      padding: 10px;
+      border-radius-top-right: 5px;
+      -moz-border-radius-top-right: 5px;
+      -webkit-border-radius-top-right: 5px;
+      border-radius-bottom-right: 5px;
+      -moz-border-radius-bottom-right: 5px;
+      -webkit-border-radius-bottom-right: 5px;
+          cursor:pointer;
+  }
+/* ===========================
+   ====== Medua Query for Search Box ====== 
+   =========================== */
+
+@media only screen and (min-width : 750px) and (max-width : 780px)
+{
+    
+    .searchproduct
+	{
+		width: 97.99%;
+		margin: 0 auto;
+	}
+
+}
+/***** Wiggle *****/
+
+.wigglecart:hover{ 
+    animation: wiggle 1s infinite;
+    animation-timing-function: linear;
+    -webkit-border-radius-bottom-right: 5px;
+        cursor:pointer;  
+  }
+  
+  @keyframes wiggle {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+/* modal */
+.modalcart {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 80%;
+    width: 33%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+ 
+  /* Modal Content */
+  .modal-content {
+    
+    background-color: #ffffff;
+    margin: auto;
+    padding: auto;
+    border: 2px double rgb(0, 0, 0);
+    width: 50%;
+    right:20%;
+    height:50%; 
   }
 /*Prducuct pages*/
 
@@ -245,6 +343,7 @@ body{
 
 .about-article{
     text-align: center;
+    margin:auto;
 }
 
 .about-header{
@@ -255,6 +354,26 @@ body{
 .about-article p{
     font-size: var(--p-font);
     padding: 3vh;
+    width: 85%;
+    margin:auto;
+}
+
+.crystallic-svg{
+    display: block;
+    margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width:10%;
+  height:10%;
+}
+
+.crystal-svg{
+    display: block;
+    margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width:10%;
+  height:10%;
 }
 
 /*---------------END ABOUT CRYSTALS PAGE----------------------*/
@@ -289,6 +408,7 @@ body{
 .news-quotes {
     display: flex;
     flex-direction: column;
+    gap:20px;
     font-size:var(--p-font);
     font-family: dancingFont;
     width: 75%;
@@ -297,7 +417,8 @@ body{
 
 .news-quotes div{
     border:solid;
-    padding: 1.5rem;;
+    padding: 1.5rem;
+
 }
 
 .news-h2{
@@ -312,6 +433,14 @@ body{
 
 /*Same as md in Bootstrap*/
 @media only screen and (min-width: 767px) {
+    .about-article{
+        width: 70%;
+    }
+    
+}
+
+/*Same as lg in Bootstrap*/
+@media only screen and (min-width: 991px) {
     .news-quotes{
         font-size: 1.6rem;
         flex-direction: row;
@@ -335,13 +464,8 @@ body{
     }
 }
 
-/*Same as lg in Bootstrap*/
-@media only screen and (min-width: 991px) {
-
-}
-
 .carousel-item img{
-    width: auto;
+    width: 600px;
     height: 500px;
     max-height: 500px;
     margin: auto; 
@@ -353,28 +477,52 @@ body{
     body, html {
         height: 100%;
         margin: 0;
-      }
-      .hero-image {
+    }
+    .hero-image {
         background-image: url("images/pexels-noelle-otto-906056.jpg");
-        height: 75%; 
+        height: 100%; 
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-      }
-      .hero-text {
+    }
+    .hero-text {
         text-align: left;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-      }
-      .navbar-collapse {
+    }
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+    h1.font-size {
+        font-size: 75px;
+    }
+    .navbar-collapse {
           font-size: large;    
-      }
-      .nav-link:hover {
+    }
+    .nav-link:hover {
         border-bottom: 3px solid black;      
     }
     .nav-link.active {
         border-bottom: 3px solid black;
     }
+    div.index-h5 {
+        text-align: center;
+    }
+    fieldset {
+        text-align: center;
+       
+    }
+    div.index-h3 {
+        text-align: center;
+    }
+   
+    
+    
+        
+    
+ 
+   
