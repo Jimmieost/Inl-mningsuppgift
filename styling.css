@@ -195,6 +195,8 @@ body{
     border: solid 1px;
     width:425px;
     height:350px; 
+    border: 1px; 
+    overflow: scroll; 
 }
 
 .contact-top-section {
@@ -205,7 +207,6 @@ body{
     background-color: silver;
     top:0;
     padding: 8vw 2vw 8vw 2vw;
-    float: center;
     width: 100%;
     max-width: 2000vw;
 }
@@ -218,31 +219,90 @@ body{
     font-size: 2.4rem;
 }   
 
-.contact-aside {
+.contact-email {
     display: flex;
-    align-items: left;
-    flex-direction: column;
-}
-.email-contact-page {
-    display: flex;
-    justify-content: center;
-    margin: 1wv 2wv 1wv 2vw;
-}
-
-input[type=text] {
-    transition: width 0.3s ease-in-out;
-    margin: 1wv 2wv 1wv 2vw;    
-}
-
-input[type=text]:focus {
-    width: 15%;
+    flex-flow: row wrap;
+    align-items: center;
+    transition: all .6s;
   }
-
-input[type=checkbox] {
-    margin: 1wv 2wv 1wv 2vw;
+    
+.contact-email label {
+    margin: 0.4vw 0.8vw 0.4vw 0;
   }
-.contact-submit {
+  
+.contact-email:focus-within {
+    transform:scale(1.1,1.1) 
+  } 
+
+.contact-email input {
+    vertical-align: middle;
+    margin: 0.4vw 0.8vw 0.4vw 0;
+    padding: 0.8vw;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.2rem;
+  }
+  
+.contact-email button {
+    padding: 0.75vw 1.5vw;
     background-color: plum;
+    border: 0.1vw solid rgb(0,0,0);
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+  }
+  
+.contact-email button:hover {
+    background-color: purple;
+  }
+
+  @media (max-width: 800px) {
+    .contact-email input {
+      margin: 10px 0;
+    }
+  
+    .contact-email {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .contact-svg {
+        width: 100px;
+        height: 100px;
+        position: relative; 
+        animation-name: contact;
+        animation-play-state:paused;
+    }
+    .contact-email:focus-within {
+        transform:none;
+      } 
+  }
+
+ .contact-svg {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: contact;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+  }
+
+  @keyframes contact {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@media (max-width: 800px) {
+    .contact-svg {
+        width: 100px;
+        height: 100px;
+        position: relative; 
+        animation-name: contact;
+        animation-play-state:paused;
+    }
 }
 /* End contact */ 
 
