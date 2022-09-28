@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Crystals, stones, energy, magic, black magic, healing powers.">
+    <meta name="description"
+        content="A page about magic crystals, where you can buy or get information about their healing powers.">
+    <meta name="author" content="Healing Crystals">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styling.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet"> 
+    <title>Healing Crystals</title>
+</head>
+
+<!-- Because our pages styles differ from each other I choose to add an unique ID to body! -->
+<body id="donate-page">
+    
+<!-- ADBLOCK POPUP -->
+<!-- This class above everything in body tag, including header etc -->
+<div class="adbn-wrap">
+    <div>
+        <p>We have detected an adblocker in your browser, <br />Adblock blocks our abillity to communicate with the
+            crystals.</p><br />
+        <p>PLEASE DISABLE IT</p>
+        <button id="adbnrb" type="button" name="button">I've disabled AdBlocker</button>
+    </div>
+</div>
+
+<!-- Cart modal -->
+<div id="myModalcart" class="modalcart">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 class="text-center" id="producth1">Purchases</h2>
+        <p>Your cart is empty</p>
+    </div>
+</div>
+
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-xxl">
+        <a href="#intro" class="navbar-brand">
+            <span class="fw-bold">
+                <img src="images/logo2.jpg" alt="Healing Crystals logo" style="width:50px; height:50px;">
+            </span>
+        </a>
+        <!--toggle button for mobile nav-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+            aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--navbar links-->
+        <div class="collapse navbar-collapse justify-content-start align-center" id="main-nav">
+            <ul class="navbar-nav">
+                <li class="nav-item fw-bold">
+                    <a href="index.html" class="nav-link text-dark">Home</a>
+                </li>
+                <li class="nav-item fw-bold">
+                    <a href="products.html" class="nav-link text-dark ">Products</a>
+                </li>
+                <li class="nav-item fw-bold">
+                    <a href="about.html" class="nav-link text-dark ">About crystals</a>
+                </li>
+                <li class="nav-item fw-bold">
+                    <a href="news.html" class="nav-link text-dark ">Community</a>
+                </li>
+                <li class="nav-item fw-bold">
+                    <a href="contact.html" class="nav-link text-dark">Contact</a>
+                </li>
+                <li class="nav-item fw-bold">
+                    <a href="donate.html" class="nav-link text-dark">Donate</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <div class="wigglecart">  
+            <a id="myOnclick">
+                <svg id="Layer_1" width="50px" height="50px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 111.85"><title>cart</title><path d="M4.06,8.22A4.15,4.15,0,0,1,0,4.06,4.13,4.13,0,0,1,4.06,0h6A19.12,19.12,0,0,1,20,2.6c5.44,3.45,6.41,8.38,7.8,13.94h91a4.07,4.07,0,0,1,4.06,4.06,5,5,0,0,1-.21,1.25L112.06,64.61a4,4,0,0,1-4,3.13H41.51c1.46,5.41,2.92,8.32,4.89,9.67C48.8,79,53,79.08,59.93,79h47.13a4.06,4.06,0,0,1,0,8.12H60c-8.63.1-13.94-.11-18.2-2.91s-6.66-7.91-8.95-17h0L18.94,14.46c0-.1,0-.1-.11-.21a7.26,7.26,0,0,0-3.12-4.68A10.65,10.65,0,0,0,10,8.22H4.06Zm80.32,25a2.89,2.89,0,0,1,5.66,0V48.93a2.89,2.89,0,0,1-5.66,0V33.24Zm-16.95,0a2.89,2.89,0,0,1,5.67,0V48.93a2.89,2.89,0,0,1-5.67,0V33.24Zm-16.94,0a2.89,2.89,0,0,1,5.66,0V48.93a2.89,2.89,0,0,1-5.66,0V33.24Zm41.72-8.58H30.07l9.26,34.86H105l8.64-34.86Zm2.68,67.21a10,10,0,1,1-10,10,10,10,0,0,1,10-10Zm-43.8,0a10,10,0,1,1-10,10,10,10,0,0,1,10-10Z"/></svg>
+            </a>
+        </div>
+
+        <a href=""><button class="btn btn-outline-dark fw-bold btn-md me-md-2" type="button"> Login</button></a>
+        <a href="news.html"><button class="btn btn-outline-dark fw-bold btn-md" type="button"> Register</button></a>
+    </div>
+</nav>
+
+<!-- Header-picture -->
+<div class="top-section">
+</div>
+
+<!-- Back to top svg -->
+<button title="back-to-top" type="button" class="btn btn-info btn-floating btn-lg" id="btn-back-to-top" >
+    <i class="fas fa-arrow-up">  &#8593 </i>
+</button>
+
+
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1>Diamond Mining Fund</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12 text-center">
+                <img src="https://www.azomining.com/images/Article_Images/ImageForArticle_1336(1).jpg" alt="hand-donate-image" id="donate-image">
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <!-- Donate bar-->
+                <h4 id="amount-raised-text"></h4>
+                <div class="progress" id="foundation-progress">
+                    <div class="progress-bar" id="foundation-progress-bar" style="width: 0%; height: 15px;">0%</div>
+                </div>
+                <!-- End of donate bar-->
+
+                <br>
+
+                <!-- Donate form -->
+                <p>Feel free to choose your desired amount below.</p>
+                <form>
+                    <div class="form-check">
+                      <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                      <label class="form-check-label" for="radio1">Donate $5</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                      <label class="form-check-label" for="radio2">Donate $15</label>
+                    </div>
+                    <div class="form-check">
+
+                      <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3"><label class="form-check-label">Amount: $</label> <input type="text" name="other_reason" id="radio3Input" style="width: 100px"/>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+                    </div>
+                </form>
+                <!-- button placed outside form because it will only be used by js -->
+                <button type="submit" class="btn btn-success mt-3" onclick="donateFromFormBtn()">Donate</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <article>
+                    <h4>Did you know...</h4>
+                    <p>
+                        ...that diamond mining is very environment friendly?
+                        <br>
+                        You will learn how by pressing the donate button. 
+                        <br>
+                        Every dollar donated makes us one dollar richer.
+                        <br>
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ut dolores quam impedit sed velit iste porro, nostrum ab reprehenderit? Excepturi quam aut possimus repudiandae eos quaerat eaque odit maxime officiis aperiam, iure, cupiditate officia!
+                    </p>
+                </article>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <img src="https://d1e00ek4ebabms.cloudfront.net/production/08781e77-5abf-44d5-8cab-f7f926e13f30.jpg" alt="hand-donate-image" id="donate-image">
+            </div>
+        </div>
+    </div>
+    
+    
+</main>
+
+
+<!-- Footer -->
+<footer class="text-center">
+    <hr>
+    
+    <div class="diamond-footer link-dark" style="padding-left: 10px; margin-top: 10px;">  
+        <a id="myOnclick">
+            <object data="https://www.svgrepo.com/show/288765/diamond.svg" width="25vh" height="25vh"> </object>
+        </a>
+      </div>
+    
+    <p> 2022 Healing Crystals, Inc</p>
+</footer>
+
+<!-- JS related to donate form and donate bar -->
+<script>
+// elements
+var elemBar = document.getElementById("foundation-progress-bar");
+var amountRaisedText = document.getElementById("amount-raised-text");
+
+// variables for donate bar
+var amountDonated = 0;
+var amountDonatedPrecentage = 0;
+var amountGoal = 200;
+
+// update text
+amountRaisedText.innerHTML = "$" + amountDonated.toString() + " raised of $" + amountGoal.toString() + " goal";
+
+function donateFromFormBtn () {
+    // Takes donate amount from form and passes it to donate func
+
+    var radio1 = document.getElementById("radio1");
+    var radio2 = document.getElementById("radio2");
+    var radio3 = document.getElementById("radio3");
+    var radio3Input = document.getElementById("radio3Input");
+
+    if (radio1.checked) {
+        donate(5);
+    } else if (radio2.checked) {
+        donate(15);
+    } else {
+        if (radio3Input.value === "") {
+            donate(0);
+        } else {
+            donate(radio3Input.value);
+        }
+        
+    }
+
+}
+
+function donate(amount) {
+    // calculate total donated
+    amountDonated = parseInt(amount) + amountDonated;
+    amountDonatedPrecentage = (amountDonated / amountGoal) * 100;
+
+    // update text
+    amountRaisedText.innerHTML = "$" + amountDonated.toString() + " raised of $" + amountGoal.toString() + " goal";
+    if (amountDonated < amountGoal) {
+        elemBar.style.width = amountDonatedPrecentage.toString() + "%";
+        elemBar.innerHTML = amountDonatedPrecentage.toString() + "%";
+    } else {
+        elemBar.style.width = "100%";
+        elemBar.innerHTML = amountDonatedPrecentage.toString() + "%";
+    }
+}
+</script>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+crossorigin="anonymous"></script>
+</body>
+</html>
