@@ -9,8 +9,7 @@
 }
 
 body{
-    /*background-color:rgb(255, 223, 221);*/
-    background-color: rgb(244, 239, 255)
+    background-color: rgb(244, 239, 255);
     font-family:'Philosopher', sans-serif;
 }
 
@@ -330,6 +329,7 @@ input[type=checkbox] {
 
 .news-article{
     text-align: center;
+    margin: auto;
 }
 
 .news-header {
@@ -374,7 +374,7 @@ input[type=checkbox] {
 
 /*Same as md in Bootstrap*/
 @media only screen and (min-width: 767px) {
-    .about-article{
+    .news-article{
         width: 70%;
     }
     
@@ -456,5 +456,69 @@ input[type=checkbox] {
     fieldset {
         text-align: center;
     }
- 
+
+    /*----------UNDER CONSTRUCTION CSS------------*/
+
+    .under-construction{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .fortune-card{
+        z-index: 0;
+        order:3;
+        align-self: center;
+        display:none;
+    }
+
+    .fortune-ball{
+        align-self: flex-start;
+        margin-top: 25px;
+        z-index: 0;
+        order:1;
+        align-self: center;
+    }
+    
+    .under-construction-text{
+        text-align: center;
+        font-weight: bold;
+        width: 90%;
+        z-index: 0;
+        order:2;
+        align-self: center;
+    }
+
+    @media only screen and (min-width: 991px) {
+        .under-construction{
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            margin:50px 125px 50px 125px;
+            gap:15px;
+        }
+     
+        .fortune-card{
+            z-index: -1;
+            order:1;
+            display:unset;
+        }
+    
+        .fortune-ball{
+            align-self: flex-start;
+            margin-top: 25px;
+            margin-left: -100px;
+            z-index: 1;
+            order:2;
+        }
+    
+        .under-construction-text{
+            margin-left: -150px;
+            width: 50%;
+            z-index: 5;
+            order:3;
+            align-self:flex-end;
+            margin-bottom:150px;
+        }
+        }
    
