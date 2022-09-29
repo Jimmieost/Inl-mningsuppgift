@@ -373,6 +373,14 @@ body{
   height:10%;
 }
 
+.aboutSVG{
+    display: block;
+    width:7%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*---------------END ABOUT CRYSTALS PAGE----------------------*/
 
 
