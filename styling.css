@@ -544,7 +544,7 @@ color: black;
     padding-bottom: 20px;
 }
 
-#donate-page #donate-image {
+#donate-page .donate-image {
     width: 100%;
     max-height: 600px;
 }
@@ -553,8 +553,8 @@ color: black;
 
 
 /* FOOTER */
-.diamond-footer:hover{ 
-    animation: bounce 2s infinite;
+.diamond-footer { 
+    animation: bounce 1s infinite;
     animation-timing-function: linear;
     -webkit-border-radius-bottom-right: 5px;
         cursor:pointer;  
