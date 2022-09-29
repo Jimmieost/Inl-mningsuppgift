@@ -191,14 +191,6 @@ body{
 
 
 /* Contact*/
-.map{
-    border: solid 1px;
-    width:425px;
-    height:350px; 
-    border: 1px; 
-    overflow: scroll; 
-}
-
 .contact-top-section {
     background-image: url('images/crystals-about.jpg');
     background-position: bottom;
@@ -210,7 +202,25 @@ body{
     width: 100%;
     max-width: 2000vw;
 }
+.contact-modal {
+    background-color: #ffffff;
+    margin: auto;
+    padding: auto;
+    border: 2px rgb(0, 0, 0);
+    width: 75%;
+    right: 10%;
+    height: 75%; 
+    border-radius: 3%;
 
+}
+
+.map{
+    border: solid 1px;
+    width:425px;
+    height:350px; 
+    border: 1px; 
+    overflow: scroll; 
+}
 .contact-info {
     font-size: 1.2rem;
 }
@@ -255,26 +265,6 @@ body{
     background-color: purple;
   }
 
-  @media (max-width: 800px) {
-    .contact-email input {
-      margin: 10px 0;
-    }
-  
-    .contact-email {
-      flex-direction: column;
-      align-items: stretch;
-    }
-    .contact-svg {
-        width: 100px;
-        height: 100px;
-        position: relative; 
-        animation-name: contact;
-        animation-play-state:paused;
-    }
-    .contact-email:focus-within {
-        transform:none;
-      } 
-  }
 
  .contact-svg {
     width: 100px;
@@ -295,7 +285,40 @@ body{
     }
 }
 
-@media (max-width: 800px) {
+.contact-founder {
+    display: flex;
+    flex-direction: row;
+    height:300px;
+    margin-left: 2vw;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: -6vw;
+}
+
+.founder-info {
+    align-items: left;
+    background-color: rgb(238, 214, 242);
+    border-radius: 1rem;
+    height: 2rem;
+    text-align: center;
+    margin-left: -1vw;
+}
+
+.founder-img {
+    border-style: groove;
+    border-radius: 100px;
+    justify-content: flex-end;
+    
+}
+@media screen and (max-width: 992px) {
+    .contact-email input {
+      margin: 10px 0;
+    }
+  
+    .contact-email {
+      flex-direction: column;
+      align-items: stretch;
+    }
     .contact-svg {
         width: 100px;
         height: 100px;
@@ -303,7 +326,24 @@ body{
         animation-name: contact;
         animation-play-state:paused;
     }
-}
+    .contact-email:focus-within {
+        transform:none;
+      } 
+
+      .contact-founder {
+        margin-top: 2vw;
+      }
+
+      .founder-info {
+        align-items: left;
+        background-color: rgb(238, 214, 242);
+        border-radius: 1rem;
+        height: auto;
+        text-align: center;
+        margin-left: -2vw;
+    }
+  }
+
 /* End contact */ 
 
 /* Back to top button */
