@@ -118,10 +118,8 @@ body{
       color: #fff;
       float: right;
       padding: 10px;
-      border-radius-top-right: 5px;
       -moz-border-radius-top-right: 5px;
       -webkit-border-radius-top-right: 5px;
-      border-radius-bottom-right: 5px;
       -moz-border-radius-bottom-right: 5px;
       -webkit-border-radius-bottom-right: 5px;
           cursor:pointer;
@@ -181,7 +179,6 @@ body{
     
     background-color: #ffffff;
     margin: auto;
-    padding: auto;
     border: 2px double rgb(0, 0, 0);
     width: 50%;
     right:20%;
@@ -416,6 +413,14 @@ body{
   height:10%;
 }
 
+.aboutSVG{
+    display: block;
+    width:7%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*---------------END ABOUT CRYSTALS PAGE----------------------*/
 
 
@@ -552,13 +557,86 @@ body{
     }
     div.index-h5 {
         text-align: center;
+        margin-top: 10px;
     }
     fieldset {
         text-align: center;
+        margin-bottom: 10px;
        
     }
+
+/* DONATE.html */
+#foundation-progress {
+width: 100%;
+background-color: #ddd;
+}
+
+#foundation-progress-bar {
+width: 0%;
+height: 30px;
+background-color: #04AA6D;
+text-align: center;
+line-height: 30px;
+color: black;
+}
+
+#donate-page .container-fluid {
+    max-width: 1000px;
+    background-color: #eee;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    margin-top: 0px;
+}
+
+#donate-page .row {
+    padding-bottom: 20px;
+}
+
+#donate-page .donate-image {
+    width: 100%;
+    max-height: 600px;
+    border-radius: 6%;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+/* END OF DONATE.HTML */
+
+
+/* FOOTER */
+.diamond-footer { 
+    animation: bounce 1s infinite;
+    animation-timing-function: linear;
+    -webkit-border-radius-bottom-right: 5px;
+        cursor:pointer;  
+}
+
+@keyframes bounce {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+/* END OF FOOTER */
+
     div.index-h3 {
         text-align: center;
+        margin-top: auto;
+        margin-bottom: 80px;
+        text-decoration-line: underline;
+    }
+    div.form {
+        border: solid 2px;
+        width: 75%;
+        margin:auto
     }
 
     /*----------UNDER CONSTRUCTION CSS------------*/
@@ -625,5 +703,3 @@ body{
             margin-bottom:150px;
         }
         }
-
-   
