@@ -509,9 +509,11 @@ body{
     }
     div.index-h5 {
         text-align: center;
+        margin-top: 10px;
     }
     fieldset {
         text-align: center;
+        margin-bottom: 10px;
        
     }
 
@@ -577,9 +579,12 @@ color: black;
 
     div.index-h3 {
         text-align: center;
+        margin-top: auto;
+        margin-bottom: 80px;
+        text-decoration-line: underline;
     }
     div.form {
-        border:solid 3px;
+        border: solid 2px;
         width: 75%;
         margin:auto
     }
