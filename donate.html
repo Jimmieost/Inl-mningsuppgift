@@ -26,9 +26,13 @@
 <!-- This class above everything in body tag, including header etc -->
 <div class="adbn-wrap">
     <div>
-        <p>We have detected an adblocker in your browser, <br />Adblock blocks our abillity to communicate with the
-            crystals.</p><br />
-        <p>PLEASE DISABLE IT</p>
+        <p>We have detected an adblocker in your browser, 
+            <br>
+            Adblock blocks our abillity to communicate with the
+            crystals.
+            <br>
+            PLEASE DISABLE IT
+        </p>
         <button id="adbnrb" type="button" name="button">I've disabled AdBlocker</button>
     </div>
 </div>
@@ -89,8 +93,8 @@
             </a>
         </div>
 
-        <a href=""><button class="btn btn-outline-dark fw-bold btn-md me-md-2" type="button"> Login</button></a>
-        <a href="news.html"><button class="btn btn-outline-dark fw-bold btn-md" type="button"> Register</button></a>
+        <a href="" class="btn btn-outline-dark fw-bold btn-md me-md-2"> Login</a>
+        <a href="news.html" class="btn btn-outline-dark fw-bold btn-md"> Register</a>
     </div>
 </nav>
 
@@ -100,7 +104,7 @@
 
 <!-- Back to top svg -->
 <button title="back-to-top" type="button" class="btn btn-info btn-floating btn-lg" id="btn-back-to-top" >
-    <i class="fas fa-arrow-up">  &#8593 </i>
+    <i class="fas fa-arrow-up">  &#8593; </i>
 </button>
 
 
@@ -114,11 +118,12 @@
 
         <div class="row">
             <div class="col-md-6 col-sm-12 text-center">
-                <img src="https://www.azomining.com/images/Article_Images/ImageForArticle_1336(1).jpg" alt="hand-donate-image" id="donate-image">
+                <img src="https://www.azomining.com/images/Article_Images/ImageForArticle_1336(1).jpg" alt="hand-donate-image" class="donate-image">
             </div>
             <div class="col-md-6 col-sm-12">
-                <!-- Donate bar-->
-                <h4 id="amount-raised-text"></h4>
+                <!-- Amount raised to donate bar text -->
+                <h4 id="amount-raised-text">$0 raised of $0 goal</h4>
+                <!-- Donate bar -->
                 <div class="progress" id="foundation-progress">
                     <div class="progress-bar" id="foundation-progress-bar" style="width: 0%; height: 15px;">0%</div>
                 </div>
@@ -139,7 +144,7 @@
                     </div>
                     <div class="form-check">
 
-                      <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3"><label class="form-check-label">Amount: $</label> <input type="text" name="other_reason" id="radio3Input" style="width: 100px"/>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+                      <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3"><label class="form-check-label">Amount: $</label> <input type="text" name="other_reason" id="radio3Input" style="width: 100px">​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
                     </div>
                 </form>
                 <!-- button placed outside form because it will only be used by js -->
@@ -166,7 +171,7 @@
                 </article>
             </div>
             <div class="col-md-6 col-sm-12">
-                <img src="https://d1e00ek4ebabms.cloudfront.net/production/08781e77-5abf-44d5-8cab-f7f926e13f30.jpg" alt="hand-donate-image" id="donate-image">
+                <img src="https://d1e00ek4ebabms.cloudfront.net/production/08781e77-5abf-44d5-8cab-f7f926e13f30.jpg" alt="hand-donate-image" class="donate-image">
             </div>
         </div>
     </div>
@@ -174,18 +179,13 @@
     
 </main>
 
-
 <!-- Footer -->
 <footer class="text-center">
     <hr>
-    
-    <div class="diamond-footer link-dark" style="padding-left: 10px; margin-top: 10px;">  
-        <a id="myOnclick">
-            <object data="https://www.svgrepo.com/show/288765/diamond.svg" width="25vh" height="25vh"> </object>
-        </a>
-      </div>
-    
-    <p> 2022 Healing Crystals, Inc</p>
+    <div class="diamond-footer link-dark" style="padding-left: 10px; margin-top: 10px;">
+        <object data="https://www.svgrepo.com/show/288765/diamond.svg" width="25" height="25"> </object>
+    </div>
+    <p>© 2022 Healing Crystals, Inc</p>
 </footer>
 
 <!-- JS related to donate form and donate bar -->
@@ -199,8 +199,6 @@ var amountDonated = 0;
 var amountDonatedPrecentage = 0;
 var amountGoal = 200;
 
-// update text
-amountRaisedText.innerHTML = "$" + amountDonated.toString() + " raised of $" + amountGoal.toString() + " goal";
 
 function donateFromFormBtn () {
     // Takes donate amount from form and passes it to donate func
