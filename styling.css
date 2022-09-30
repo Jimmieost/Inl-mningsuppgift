@@ -618,6 +618,9 @@ color: black;
 
 /* FOOTER */
 .diamond-footer { 
+    position: absolute;
+    left:50%;
+    margin-top: 10px;
     animation: bounce 1s infinite;
     animation-timing-function: linear;
     -webkit-border-radius-bottom-right: 5px;
