@@ -42,24 +42,26 @@
         </div>
     </div>
 
-        <!--Back to top-->
-        <button title="back-to-top" type="button" class="btn btn-info btn-floating btn-lg" id="btn-back-to-top">
-            <em class="fas fa-arrow-up"> &#8593; </em>
-        </button>
-
-        <div class="hero-image">
-            <!--navbar-->
-            <nav class="navbar navbar-expand-md navbar-light ">
-                <div class="container-xxl">
-                    <a href="index.html" class="navbar-brand">
-                        <img src="images/logo2.jpg" class="logo" alt="Healing Crystals logo">
-                    </a>
-                    <!--toggle button for mobile nav-->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-                        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
+<!--Back to top-->
+<button title="back-to-top" type="button" class="btn btn-info btn-floating btn-lg" id="btn-back-to-top" >
+  <em class="fas fa-arrow-up">  &#8593; </em>
+</button> 
+     <!--Header-text in this div-->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 class="font-size">Healing Crystals</h1>
+        </div>
+        <!--navbar-->
+        <nav class="navbar navbar-expand-md navbar-light ">
+            <div class="container-xxl">
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo2.jpg" class="logo" alt="Healing Crystals logo">
+                </a>
+                <!--toggle button for mobile nav-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                     <!--navbar links-->
                     <div class="collapse navbar-collapse justify-content-start " id="main-nav">
@@ -102,17 +104,16 @@
                     <a href="news.html"><button class="btn btn-outline-dark fw-bold btn-md" type="button">
                             Register</button></a>
                 </div>
-            </nav>
-            <div class="hero-text">
-                <h1 class="font-size">Healing Crystals</h1>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <main>
-            <div class="index-h3">
-                <h3>Why do you need more crystals in your life?</h3>
+            </nav>         
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <main>
+        <section>
+        <div class="index-h3">
+            <h3>Why do you need more crystals in your life?</h3>
             </div>
             <div class="row">
                 <div class="col-sm-5 mb-5 mx-auto">
@@ -165,65 +166,66 @@
                 </div>
             </div>
             <br>
-            <br>
-            <!--Start carousel-->
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/pexels-bogdan-dirică-1645668.jpg" alt="Image of a crystal ball">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/pexels-dids-2942856.jpg" alt="Image of a pink crystal">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/pexels-tobias-bjørkli-1632242.jpg" alt="Image of a necklace with crystals">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/ametist.jpg" alt="Image of an amethyst">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/Bergskirstaller.jpg" alt="Image of a rock crystal">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/Peridot.jpg" alt="Image of a Peridot Crystal">
-                    </div>
-                </div>
-            </div>
-            <br>
-            <br>
+            <br/>
+    </section>    
+    <br>
+    <br>
+    <!--Start carousel-->
 
-            <div class="form">
-                <div class="index-h5">
-                    <h5>Not finding what you are looking for?<br> Choose one below or write a message and tell us more
-                        about
-                        your favourite crystals. <br>We will do everything in our power to have it available in our
-                        webshop.
-                    </h5>
-                </div>
-                <br>
-                <form action="mailto:jimmie.ost@utb.ecutbildning.se">
-                    <fieldset>
-                        <input type="radio" id="amethyst" name="fav_crystal" value="amethyst">
-                        <label for="amethyst">Amethyst</label><br>
-                        <input type="radio" id="rock-crystal" name="fav_crystal" value="rock-crystal" checked="checked">
-                        <label for="rock-crystal">Rock Crystal</label><br>
-                        <input type="radio" id="adamite" name="fav_crystal" value="adamite">
-                        <label for="adamite">Adamite</label><br>
-                        <input type="radio" id="pyromorphite" name="fav_crystal" value="pyromorphite">
-                        <label for="pyromorphite">Pyromorphite</label><br>
-                        <input type="radio" id="moonstone" name="fav_crystal" value="moonstone" checked="checked">
-                        <label for="moonstone">Moonstone</label><br>
-                        <input type="radio" id="zoisite" name="fav_crystal" value="zoisite">
-                        <label for="zoisite">Zoisite</label><br><br>
-                        <label for="textarea">Message:</label><br>
-                        <textarea id="textarea" name="textarea" rows="10"
-                            cols="30">Write your message here...</textarea> <br>
-                        <input type="submit" value="Submit">
-                        <input type="reset" value="Reset">
-                    </fieldset>
-                </form>
+    <div id="carouselIndex" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="images/crystalballsm.jpg" alt="Image of a crystal ball">
             </div>
-        </main>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/pexels-dids-2942856sm.jpg" alt="Image of a pink crystal">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/pexels-tobias-bjørkli-1632242sm.jpg" alt="Image of a necklace with crystals">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/ametistsm.jpg" alt="Image of an amethyst">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/Bergskirstallersm.jpg" alt="Image of a rock crystal">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/Peridotsm.jpg" alt="Image of a Peridot Crystal">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!--Start form-->
+    <div class="form">
+        <div class="index-h5">
+            <h5>Not finding what you are looking for?<br> Choose one below or write a message and tell us more about
+                your favourite crystals. <br>We will do everything in our power to have it available in our webshop.
+            </h5>
+        </div>
+        <br>
+        <form action="mailto:healingcrystals@energies.com">
+            <fieldset>
+                <input type="radio" id="amethyst" name="fav_crystal" value="amethyst">
+                <label for="amethyst">Amethyst</label><br>
+                <input type="radio" id="rock-crystal" name="fav_crystal" value="rock-crystal" checked="checked">
+                <label for="rock-crystal">Rock Crystal</label><br>
+                <input type="radio" id="adamite" name="fav_crystal" value="adamite">
+                <label for="adamite">Adamite</label><br>
+                <input type="radio" id="pyromorphite" name="fav_crystal" value="pyromorphite">
+                <label for="pyromorphite">Pyromorphite</label><br>
+                <input type="radio" id="moonstone" name="fav_crystal" value="moonstone" checked="checked">
+                <label for="moonstone">Moonstone</label><br>
+                <input type="radio" id="zoisite" name="fav_crystal" value="zoisite">
+                <label for="zoisite">Zoisite</label><br><br>
+                <label for="textarea">Message:</label><br>
+                <textarea id="textarea" name="textarea" rows="10" cols="30">Write your message here...</textarea> <br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </div>
+    </main>
 
         <!--Start footer-->
         <footer class="text-center">
