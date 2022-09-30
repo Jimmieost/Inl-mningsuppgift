@@ -359,7 +359,6 @@ body{
 
 /*---------------ABOUT CRYSTALS PAGE----------------------*/
 
-
 #scrollspy-crystal-info{
     overflow: scroll;
     height: 30rem;
@@ -419,13 +418,17 @@ body{
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
+    transition: opacity 400ms;
 }
 
-/*---------------END ABOUT CRYSTALS PAGE----------------------*/
+.aboutSVG:hover{
+    opacity: 0.6;
+}
+
+/*---------------END ABOUT CRYSTALS CSS----------------------*/
 
 
 /*------------NEWS CSS--------------*/
-
 
 @font-face {
     font-family: dancingFont;
@@ -472,9 +475,6 @@ body{
     padding: 2rem;
 }
 
-
-/*------------END NEWS CSS--------------*/
-
 /*---------------MEDIA QUERIES----------------------*/
 
 /*Same as md in Bootstrap*/
@@ -509,6 +509,9 @@ body{
         border-width: 3px;
     }
 }
+
+/*------------END NEWS CSS--------------*/
+
 /*Start index page*/
 .carousel-item img{
     width: 600px;
@@ -694,6 +697,7 @@ color: black;
         }
     
         .under-construction-text{
+            font-size: var(--p-font);
             margin-left: -150px;
             width: 50%;
             z-index: 5;
